@@ -215,10 +215,13 @@ Código usa: estruturas de seleção, laços de repetição, vetores e funções
 * <img width="423" height="317" alt="Captura de tela 2025-11-26 204343" src="https://github.com/user-attachments/assets/1befef40-5aae-41d3-ac78-24244c200d61" />
 * Remoção e reorganização (antes e depois)
 * <img width="391" height="259" alt="Captura de tela 2025-11-26 202517" src="https://github.com/user-attachments/assets/1b9e642f-c4c2-496c-ba4b-56b41654af21" />
-* Saída dos relatórios (média de mel e contagem por região)
+* Saída dos relatórios (média de mel )
 * <img width="706" height="419" alt="Captura de tela 2025-11-26 203504" src="https://github.com/user-attachments/assets/76e77fb2-e602-4c56-b19d-e937a7d679e5" />
+* Media De Temperatura
+* <img width="572" height="267" alt="Captura de tela 2025-11-26 205044" src="https://github.com/user-attachments/assets/f04404ae-05ee-4104-9e1b-5b1fb9e801db" />
+* Contagem por Região
+* <img width="597" height="206" alt="Captura de tela 2025-11-26 205111" src="https://github.com/user-attachments/assets/dae118ff-3c0b-4f30-a9b2-03179cbe8613" />
 
-* 
 
 ---
 
