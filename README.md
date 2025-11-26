@@ -1,33 +1,18 @@
-Refaça e substitua estas planilhas que você fez a partir de funcionalidades e funções, faça que nem este exemplo, ( Funcionalidades
-📝 Cadastrar Produto
+Certo — fiz uma versão **simples, sem tabelas**, com tudo em listas claras, uma seção por linha (pronto para colar no README). Mantive as funcionalidades e a visão das funções no formato que você pediu.
 
-Impede códigos duplicados
-Validação de entrada
-Limite de 100 produtos) (🔧 Visão Geral das Funções
-📌 Cadastro
-void cadastrarProduto()
-
-Argumentos: nenhum
-Retorno: nenhum
-Descrição: Solicita dados do usuário para cadastrar um novo produto no estoque, realizando validações como código único e valores válidos.
-🔍 Consulta
-void consultarProduto()
-
-Argumentos: nenhum
-Retorno: nenhum
-Descrição: Solicita o código do produto e exibe todas as informações cadastradas caso o produto seja encontrado.) aqui está o readme a ser alterado: 
+---
 
 # 📦 Sistema de Monitoramento de Colmeias (BeeMonitor C)
 
 # 🏫 Informações do Projeto
 
-**Título:** Sistema de Monitoramento de Abelhas Sem Ferrão (BeeMonitor C)
-**🎓 Universidade:** Universidade Federal do Piauí – Campus Senador Helvídio Nunes de Barros
-**💻 Curso:** Bacharelado em Sistemas de Informação
-**📚 Disciplina:** Algoritmos e Programação I
-**👩‍🏫 Professor(a):** Dra. Alcilene Dalília de Sousa
+Título: Sistema de Monitoramento de Abelhas Sem Ferrão (BeeMonitor C)
+Universidade: Universidade Federal do Piauí – Campus Senador Helvídio Nunes de Barros
+Curso: Bacharelado em Sistemas de Informação
+Disciplina: Algoritmos e Programação I
+Professor(a): Dra. Alcilene Dalília de Sousa
 
-## 👥 Equipe:
+Equipe:
 
 * Danilo Nobre Hipólito
 * Francisco Eduardo de Vasconcelos Costa
@@ -39,158 +24,190 @@ Descrição: Solicita o código do produto e exibe todas as informações cadast
 
 # 📖 Descrição do Projeto
 
-O **BeeMonitor C** é um sistema de cadastro e monitoramento de abelhas sem ferrão e sensores ambientais associados, desenvolvido integralmente em **linguagem C**.
-
-O sistema permite ao usuário realizar operações de **cadastro, listagem, busca, alteração e remoção** de registros de abelhas e sensores, além de gerar **relatórios estatísticos** como médias e contagens.
-O código utiliza obrigatoriamente:
-
-* Estruturas de seleção
-* Estruturas de repetição
-* Vetores
-* Funções para modularização
-
-O programa implementa as seguintes áreas através de menus:
-
-🐝 **Gerenciamento de Abelhas** | 🤖 **Gerenciamento de Sensores** | 📊 **Relatórios e Estatísticas**
+O BeeMonitor C é um sistema em linguagem C para cadastrar e monitorar abelhas sem ferrão e sensores ambientais.
+Permite cadastro, listagem, busca, alteração, remoção e geração de relatórios simples (médias e contagens).
+Código usa: estruturas de seleção, laços de repetição, vetores e funções.
 
 ---
 
 # 📁 Estrutura do Projeto
 
-```
-Sistema_BeeMonitor/
-├── 📄 trab_algo1.c       # Arquivo principal com todas as funcionalidades.
-├── 📁 screenshots/       # Imagens das telas do sistema (demonstração visual).
-└── 📄 README.md          # Documentação do projeto.
-```
+* Sistema_BeeMonitor/
+* trab_algo1.c
+* screenshots/
+* README.md
 
 ---
 
-# ⚙️ Como Compilar e Executar
+# ⚙️ Como compilar e executar
 
-O projeto pode ser compilado utilizando o GCC (GNU Compiler Collection).
-
-### 💻 Windows/Linux
-
-```bash
-# Compilar o código fonte
-gcc trab_algo1.c -o beemonitor
-
-# Executar o programa
-./beemonitor
-```
+* Compilar: `gcc trab_algo1.c -o beemonitor`
+* Executar: `./beemonitor`
 
 ---
 
-# ✨ Requisitos e Funcionalidades
+# ✨ Funcionalidades
 
-O sistema implementa o **MENU PRINCIPAL** e três submenus, conforme os requisitos do trabalho.
+## 🐝 Gerenciamento de Abelhas
 
----
+* Cadastrar abelha
 
-## **1. 🐝 Gerenciamento de Abelhas**
+  * IDs gerados automaticamente
+  * Validação de entrada (nome, região, produção)
+  * Limite máximo de abelhas (definido no código)
+* Listar abelhas
 
-### **Atributos**
+  * Exibe ID, nome popular, nome científico, região e produção
+* Buscar abelha por nome popular
 
-| Atributo  | Detalhes                                                      |
-| --------- | ------------------------------------------------------------- |
-| Estrutura | `Abelha (struct)`                                             |
-| Campos    | id, nomePopular, nomeCientifico, regiao, producaoMel (kg/mês) |
+  * Pesquisa por texto e exibe registro encontrado
+* Alterar dados da abelha
 
-### **Operações**
+  * Exige ID válido e permite editar campos
+* Remover abelha
 
-* Cadastrar
-* Listar
-* Buscar por nome popular
-* Alterar dados
-* Remover
+  * Remove pelo ID e reorganiza o vetor (deslocamento à esquerda)
 
-IDs são gerados automaticamente e a remoção reorganiza o vetor.
+## 🤖 Gerenciamento de Sensores
 
----
+* Cadastrar sensor
 
-## **2. 🤖 Gerenciamento de Sensores**
+  * ID do sensor gerado automaticamente
+  * Tipos aceitos: temperatura, umidade, luminosidade
+  * Exige ID de abelha válido
+  * Limite máximo de sensores (definido no código)
+* Listar sensores
 
-### **Atributos**
+  * Exibe ID do sensor, tipo, valor e ID da abelha associada
+* Buscar sensores por ID da abelha
 
-| Atributo  | Detalhes                                                             |
-| --------- | -------------------------------------------------------------------- |
-| Estrutura | `SensorData (struct)`                                                |
-| Campos    | IDsensor, tipo (temperatura, umidade, luminosidade), valor, IDabelha |
+  * Lista todos os sensores vinculados àquela abelha
+* Alterar sensor
 
-### **Operações**
+  * Permite alterar tipo ou valor, com revalidação do ID da abelha
+* Remover sensor
 
-* Cadastrar
-* Listar
-* Buscar por ID da abelha
-* Alterar leitura
-* Remover
+  * Remove pelo ID e reorganiza o vetor
 
-IDs são gerados automaticamente e o cadastro exige um **IDabelha válido**.
+## 📊 Relatórios e estatísticas
 
----
+* Média geral da produção de mel
 
-## **3. 📊 Relatórios**
+  * Calcula média entre todas as abelhas cadastradas
+* Média de temperatura dos sensores
 
-* 🍯 **Média Geral de Produção de Mel**
-* 🌡️ **Média de Temperatura dos Sensores**
-* 🌍 **Quantidade de Abelhas por Região**
+  * Calcula média apenas das leituras tipo "Temperatura"
+* Quantidade de abelhas por região
 
----
-
-# 🔧 Visão Geral das Funções
-
-| Categoria  | Função                           | Descrição                                        |
-| ---------- | -------------------------------- | ------------------------------------------------ |
-| Abelhas    | `void cadastrarAbelha()`         | Adiciona uma abelha, gerando ID automaticamente. |
-| Abelhas    | `void listarAbelhas()`           | Exibe todos os registros.                        |
-| Abelhas    | `void buscarAbelhaPorNome()`     | Busca por nome popular.                          |
-| Abelhas    | `void alterarAbelha()`           | Altera dados pelo ID.                            |
-| Abelhas    | `void removerAbelha()`           | Remove e reorganiza o vetor.                     |
-| Sensores   | `void cadastrarSensor()`         | Adiciona sensor validando IDabelha.              |
-| Sensores   | `void listarSensores()`          | Lista todos os sensores cadastrados.             |
-| Sensores   | `void buscarSensorPorIdAbelha()` | Lista sensores associados a uma abelha.          |
-| Sensores   | `void alterarSensor()`           | Altera leitura, revalidando IDabelha.            |
-| Sensores   | `void removerSensor()`           | Remove e reorganiza o vetor.                     |
-| Relatórios | `void MediaGeralMel()`           | Calcula média da produção de mel.                |
-| Relatórios | `void MediaTemperatura()`        | Calcula média dos sensores tipo "Temperatura".   |
-| Relatórios | `void ContagemRegiao()`          | Conta abelhas por região.                        |
-| Utilitária | `int idAbelhaExiste(int id)`     | Verifica se ID da abelha é válido.               |
+  * Agrupa e conta abelhas por região informada
 
 ---
 
-# 🖼️ Demonstração Visual
+# 🔧 Visão geral das funções
 
-Você deve incluir os seguintes prints na pasta **screenshots/**:
+## Abelhas
 
-### 🎛️ Menu Principal
+* `void cadastrarAbelha()`
 
-Tela inicial com todas as opções.
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Lê dados do usuário, valida e adiciona uma abelha (gera ID).
 
-### 📝 Cadastro e Lista de Abelhas
+* `void listarAbelhas()`
 
-* Entrada completa para cadastrar abelha
-* Tela com pelo menos três registros listados
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Mostra todas as abelhas cadastradas.
 
-### 🤖 Cadastro de Sensor (validação incluída)
+* `void buscarAbelhaPorNome()`
 
-* Cadastro mostrando tipo, valor e ID da abelha
-* Mensagem de sucesso após ID válido
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Solicita nome popular e exibe o registro correspondente.
 
-### 🔎 Busca de Sensores por Abelha
+* `void alterarAbelha()`
 
-* Sensores associados a um único ID de abelha
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Solicita ID, valida e permite alterar campos da abelha.
 
-### ❌ Remoção e Reorganização
+* `void removerAbelha()`
 
-* Tela de confirmação
-* Nova listagem mostrando o vetor reorganizado
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Solicita ID, remove o registro e reorganiza o vetor.
 
-### 📊 Relatórios
+## Sensores
 
-* Média Geral de Produção de Mel
-* Contagem de Abelhas por Região
+* `void cadastrarSensor()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Lê tipo, valor e IDabelha; valida o ID da abelha e adiciona o sensor.
+
+* `void listarSensores()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Exibe todos os sensores cadastrados.
+
+* `void buscarSensorPorIdAbelha()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Solicita ID da abelha e lista sensores associados.
+
+* `void alterarSensor()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Solicita ID do sensor, permite alterar tipo/valor e revalida IDabelha.
+
+* `void removerSensor()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Remove sensor por ID e reorganiza o vetor.
+
+## Relatórios
+
+* `void MediaGeralMel()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Calcula e exibe a média da produção de mel.
+
+* `void MediaTemperatura()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Calcula e exibe a média das leituras tipo "Temperatura".
+
+* `void ContagemRegiao()`
+
+  * Argumentos: nenhum
+  * Retorno: nenhum
+  * Descrição: Conta e exibe a quantidade de abelhas por região.
+
+## Utilitárias
+
+* `int idAbelhaExiste(int id)`
+
+  * Argumentos: id (int)
+  * Retorno: 1 (existe) ou 0 (não existe)
+  * Descrição: Verifica se o ID informado está cadastrado.
 
 ---
 
-Se quiser, posso criar **versão com ícones coloridos**, **badges**, **logo personalizada**, ou uma **versão simplificada**. É só pedir!
+# 🖼️ Demonstração visual (sugestão de prints)
+
+* Menu principal
+* Cadastro de abelhas + listagem com pelo menos 3 registros
+* Cadastro de sensor (validação de ID)
+* Busca de sensores por ID da abelha
+* Remoção e reorganização (antes e depois)
+* Saída dos relatórios (média de mel e contagem por região)
+
+---
+
+Se quiser, eu deixo **a versão ainda mais enxuta** (sem emojis) ou **traduzo para inglês**. Quer que eu remova os emojis também?
