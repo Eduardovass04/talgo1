@@ -207,11 +207,17 @@ Código usa: estruturas de seleção, laços de repetição, vetores e funções
 * <img width="346" height="212" alt="Captura de tela 2025-11-26 201718" src="https://github.com/user-attachments/assets/10a0218a-a777-4f5f-8f9b-ccf4235a36f6" />
 * Cadastrar Abelhas
 * <img width="509" height="186" alt="Captura de tela 2025-11-26 201953" src="https://github.com/user-attachments/assets/e7f359eb-5126-48e3-b63b-e7060c09bf39" />
-* Busca de sensores por ID da abelha
-* <img width="477" height="171" alt="Captura de tela 2025-11-26 202244" src="https://github.com/user-attachments/assets/c4c4abed-8657-49f0-ba2d-e1c900f87b08" />
+<img width="494" height="192" alt="Captura de tela 2025-11-26 203252" src="https://github.com/user-attachments/assets/6fde4e14-19af-42cf-854a-588ccd6b04a7" />
+
+* Listar sensores
+* <img width="367" height="333" alt="Captura de tela 2025-11-26 204108" src="https://github.com/user-attachments/assets/61881fae-5357-4a52-bc00-d170d2e5c89d" />
+* Buscar Sensores Por Id da Abelha
+* <img width="423" height="317" alt="Captura de tela 2025-11-26 204343" src="https://github.com/user-attachments/assets/1befef40-5aae-41d3-ac78-24244c200d61" />
 * Remoção e reorganização (antes e depois)
 * <img width="391" height="259" alt="Captura de tela 2025-11-26 202517" src="https://github.com/user-attachments/assets/1b9e642f-c4c2-496c-ba4b-56b41654af21" />
 * Saída dos relatórios (média de mel e contagem por região)
+* <img width="706" height="419" alt="Captura de tela 2025-11-26 203504" src="https://github.com/user-attachments/assets/76e77fb2-e602-4c56-b19d-e937a7d679e5" />
+
 * 
 
 ---
