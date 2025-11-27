@@ -269,3 +269,11 @@ Segunda etapa:
 <img width="597" height="206" alt="Contagem Regiao" src="https://github.com/user-attachments/assets/dae118ff-3c0b-4f30-a9b2-03179cbe8613" />
 
 ---
+#  Bugs e Limitações Conhecidas
+
+• Ao remover uma abelha que possui sensores associados, os sensores continuam relacionados ao ID da abelha removida.  
+  Ou seja, os sensores ficam "soltos" apontando para um ID que já não existe.
+
+• A busca por nome de abelha é sensível a maiúsculas e minúsculas.  
+  Para encontrar um registro pelo nome popular, o usuário deve digitar exatamente igual ao que foi cadastrado, sem diferença de letras maiúsculas/minúsculas.
+
