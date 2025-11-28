@@ -16,8 +16,6 @@ Equipe:
 
 * Danilo Nobre Hipólito
 * Francisco Eduardo de Vasconcelos Costa
-* Maria Raika Sousa Silva
-* Maria Iwanda Campelo Silva
 * Thais Araújo Rodrigues
 
 ---
